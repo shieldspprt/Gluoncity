@@ -17,10 +17,6 @@ Sketch.create({
 
     scene = new THREE.Scene();
 
-    geometry = new THREE.SphereGeometry(RADIUS/3, 30, 30);
-    material = new THREE.MeshBasicMaterial({ color: 0x333344, opacity:0.0 });
-    mesh = new THREE.Mesh(geometry, material);
-    scene.add(mesh);
 
     for (var i = 0; i < 75; i++) {
       geometry = new THREE.SphereGeometry(random(5, 10), 10, 10);
