@@ -17,12 +17,12 @@ Sketch.create({
 
     scene = new THREE.Scene();
 
-    geometry = new THREE.SphereGeometry(RADIUS, 30, 30);
+    geometry = new THREE.SphereGeometry(RADIUS/3, 30, 30);
     material = new THREE.MeshBasicMaterial({ color: 0x333344, opacity:0 });
     mesh = new THREE.Mesh(geometry, material);
     scene.add(mesh);
 
-    for (var i = 0; i < 75; i++) {
+    for (var i = 0; i < 65; i++) {
       geometry = new THREE.SphereGeometry(random(5, 20), 10, 10);
       material = new THREE.MeshBasicMaterial({ color: random(COLORS) });
       geometry.applyMatrix(new THREE.Matrix4().makeTranslation(0, RADIUS*1.5, 0));
